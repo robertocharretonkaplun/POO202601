@@ -1,4 +1,5 @@
 #include "Prerequisites.h"
+#include "Inventory.h"
 
 // Crear un clase Character
 class
@@ -36,17 +37,16 @@ protected:
 // This function is in charge of being the entry point of the app.
 int 
 main() {
-	Character pepe(150);
-	pepe.getHealth();
-	std::cout << pepe.getHealth() << std::endl;
-	pepe.setHealth(-50);
-	std::cout << pepe.getHealth() << std::endl;
+	Inventory inventory;
+	inventory.addItem("Pocion de Vida", 5);
+	inventory.addItem("Elixir de Mana", 3);
+	inventory.addItem("Diamante", 64);
 
-	if (pepe.getHealth() <= 0) {
-		std::cout << "El pepe, murio." << std::endl;
-		pepe.rebirth();
-	}
+	inventory.useItem("Pocion de Vida", 2);
+	inventory.showInventory();
+
 
 	std::cout << "Hello World!" << std::endl;
+	std::cin.get();
 	return 0;
 }
