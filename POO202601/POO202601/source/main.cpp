@@ -1,6 +1,6 @@
 #include "Prerequisites.h"
 #include "Inventory.h"
-
+#include "Rectangulo.h"
 // Crear un clase Character
 class
 Character {
@@ -46,7 +46,13 @@ main() {
 	inventory.showInventory();
 
 
-	std::cout << "Hello World!" << std::endl;
+	Rectangulo rect(4.0, 5.0);
+	std::cout << "Rectangulo - Ancho: " << rect.getAncho() << ", Alto: " << rect.getAlto() << std::endl;
+	std::cout << "Area: " << rect.area() << std::endl;
+	std::cout << "Perimetro: " << rect.perimetro() << std::endl;
+
+	Fecha fecha;
+	fecha.getFecha();
 	std::cin.get();
 	return 0;
 }
