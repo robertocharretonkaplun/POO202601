@@ -18,6 +18,11 @@ public:
    */
   Rectangulo(double ancho, double alto) : m_ancho(ancho), m_alto(alto) {};
 
+  //Rectangulo(double ancho, double alto) {
+  //  m_ancho = ancho;
+	//	m_alto = alto;
+  //};
+
   /**
    * @brief Destructor por defecto de la clase.
    */
