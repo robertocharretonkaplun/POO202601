@@ -29,21 +29,6 @@ public:
 		return m_numeroCuenta;
 	}
 
-protected:
-	// Transferir dinero a otra cuenta
-	void
-	transferir(CuentaBancaria& cuentaOrigen, CuentaBancaria& cuentaDestino, double monto, int noRef) {
-		if (monto > 0 && monto <= cuentaOrigen.m_saldo) {
-			cuentaOrigen.m_saldo -= monto;
-			cuentaDestino.m_saldo += monto;
-			std::cout << "Transferencia de " << monto << " de la cuenta "
-				<< cuentaOrigen.m_numeroCuenta << " a la cuenta " << cuentaDestino.m_numeroCuenta
-				<< " realizada con exito."  << " Numero de Referencia: " << noRef << std::endl;
-		} else {
-			std::cout << "Error en la transferencia: monto invalido o saldo insuficiente." << std::endl;
-		}
-	}
-
 private:
 	double
 	calcularInteres(double tasaInteres) {
