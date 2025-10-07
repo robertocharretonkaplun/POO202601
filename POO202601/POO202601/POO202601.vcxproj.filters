@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns">
+      <UniqueIdentifier>{55e43aa9-7bbd-4289-8011-20834e1565a8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Item.h">
@@ -39,9 +42,12 @@
     <ClInclude Include="include\UsarioBancario.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\MiSingleton.h">
+      <Filter>Header Files\ProgrammingPatterns</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="source\main.cpp">
+    <ClCompile Include="source\main2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

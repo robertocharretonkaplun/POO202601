@@ -15,6 +15,11 @@ public:
 
 	~UsuarioBancario() = default;
 
+	void
+	setCashBack(double monto) {
+		m_cashBack += monto;
+	}
+
 	CuentaBancaria&
 	getCuenta() {
 		return m_cuenta;
@@ -25,6 +30,6 @@ private:
 	std::string m_nombreUsuario;
 	std::vector<int> m_historialTransacciones;
 	Fecha m_antiguedad;
-	int m_cashBack; // 1% 3% 5%
+	double m_cashBack; // 1% 3% 5%
 	int m_uniquePoints;
 };

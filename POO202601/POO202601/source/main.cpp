@@ -78,7 +78,7 @@ main() {
 
 	std::cout << "Realizando la transferencia:" << std::endl;
 	Santander.realizarTransferencia(Ana, Ariana, 1500.0, 1709);
-	//Santander.realizarCompra(Ariana, "Shampoo", 245.0, 1809); // Esto debe de dar cashBack (Compras en comercios = 1%)
+	Santander.realizarCompra(Ariana, "Shampoo", 245.0, 1809); // Esto debe de dar cashBack (Compras en comercios = 1%)
 
 	std::cout << "Despues de la transferencia:" << std::endl;
 

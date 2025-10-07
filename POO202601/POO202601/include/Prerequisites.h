@@ -32,3 +32,11 @@ struct Fecha {
 
 };
 
+
+enum 
+TRADE {
+	TELECOMUNICACIONES = 1,
+	RESTAURANTES = 2,
+	FARMACIAS = 3,
+	SUPERMERCADOS = 4
+};
