@@ -25,12 +25,21 @@
     <ClInclude Include="include\Inventory.h" />
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisites.h" />
+    <ClInclude Include="include\ProgrammingPattterns\AbstractFactory\FabricaAbstracta.h" />
+    <ClInclude Include="include\ProgrammingPattterns\AbstractFactory\FabricaConcreta.h" />
+    <ClInclude Include="include\ProgrammingPattterns\AbstractFactory\ProductoA.h" />
+    <ClInclude Include="include\ProgrammingPattterns\AbstractFactory\ProductoA1.h" />
+    <ClInclude Include="include\ProgrammingPattterns\AbstractFactory\ProductoB.h" />
+    <ClInclude Include="include\ProgrammingPattterns\AbstractFactory\ProductoB1.h" />
+    <ClInclude Include="include\ProgrammingPattterns\FactoryMethod.h" />
     <ClInclude Include="include\ProgrammingPattterns\MiSingleton.h" />
     <ClInclude Include="include\Rectangulo.h" />
     <ClInclude Include="include\UsarioBancario.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp" />
+    <ClCompile Include="source\ProgrammingPattterns\AbstractFactory\ProductoA1.cpp" />
+    <ClCompile Include="source\ProgrammingPattterns\AbstractFactory\ProductoB1.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

@@ -16,6 +16,15 @@
     <Filter Include="Header Files\ProgrammingPatterns">
       <UniqueIdentifier>{55e43aa9-7bbd-4289-8011-20834e1565a8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\AbstractFactory">
+      <UniqueIdentifier>{f52def12-0e0a-4cf6-89ca-b038e4053b60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ProgrammingPatterns">
+      <UniqueIdentifier>{6dfbb29a-9051-450d-ad7e-e1eb90d9eb2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ProgrammingPatterns\AbstractFactory">
+      <UniqueIdentifier>{4a53742f-0c60-43ca-ad5a-251ec1c9c048}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Item.h">
@@ -45,10 +54,37 @@
     <ClInclude Include="include\ProgrammingPattterns\MiSingleton.h">
       <Filter>Header Files\ProgrammingPatterns</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\FactoryMethod.h">
+      <Filter>Header Files\ProgrammingPatterns</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\AbstractFactory\ProductoA.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\AbstractFactory\ProductoB.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\AbstractFactory\FabricaAbstracta.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\AbstractFactory\ProductoA1.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\AbstractFactory\ProductoB1.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\AbstractFactory\FabricaConcreta.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingPattterns\AbstractFactory\ProductoA1.cpp">
+      <Filter>Source Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingPattterns\AbstractFactory\ProductoB1.cpp">
+      <Filter>Source Files\ProgrammingPatterns\AbstractFactory</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
