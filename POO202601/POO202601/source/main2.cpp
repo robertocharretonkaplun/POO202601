@@ -2,6 +2,7 @@
 #include "ProgrammingPattterns\Builder\Builder.h"
 #include "ProgrammingPattterns\Builder\BuilderConcreto.h"
 #include "ProgrammingPattterns\Builder\Director.h"
+
 int main() {
 	Builder* builder = new BuilderConcreto();
 	Director* director = new Director(builder);

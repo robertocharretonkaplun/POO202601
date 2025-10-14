@@ -15,7 +15,8 @@ public:
 		}
 	}
 
-	void show() {
+	void 
+	show() {
 		Producto* producto = builder->getProducto();
 		if (producto) {
 			producto->show();
