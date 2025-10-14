@@ -1,18 +1,19 @@
 #include "Prerequisites.h"
-
-#include "ProgrammingPattterns/AbstractFactory/FabricaConcreta.h"
-
+#include "ProgrammingPattterns\Builder\Builder.h"
+#include "ProgrammingPattterns\Builder\BuilderConcreto.h"
+#include "ProgrammingPattterns\Builder\Director.h"
 int main() {
-	FabricaAbstracta* fabrica = new FabricaConcreta();
-	ProductoA* productoA = fabrica->crearProductoA();
-	ProductoB* productoB = fabrica->crearProductoB();
-
-	productoA->operacionA();
-	productoB->operacionB();
-
-	delete fabrica;
-	delete productoA;
-	delete productoB;
-
+	Builder* builder = new BuilderConcreto();
+	Director* director = new Director(builder);
+	
+	director->construct();
+	//director->show();
+	
+	Producto* producto = builder->getProducto();
+	producto->show();
+	
+	delete producto;	
+	delete director;
+	delete builder;
 	return 0;
 }
