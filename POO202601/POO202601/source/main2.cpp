@@ -1,20 +1,21 @@
 #include "Prerequisites.h"
-#include "ProgrammingPattterns\Builder\Builder.h"
-#include "ProgrammingPattterns\Builder\BuilderConcreto.h"
-#include "ProgrammingPattterns\Builder\Director.h"
+#include "ProgrammingPattterns\Builder\ConstructorPizza.h"
+#include "ProgrammingPattterns\Builder\BuilderPizzaHawaiana.h"
+#include "ProgrammingPattterns\Builder\Pizza.h"
+
 
 int main() {
-	Builder* builder = new BuilderConcreto();
-	Director* director = new Director(builder);
-	
-	director->construct();
-	//director->show();
-	
-	Producto* producto = builder->getProducto();
-	producto->show();
-	
-	delete producto;	
-	delete director;
-	delete builder;
+	ConstructorPizza* constructorHawaiana = new BuilderPizzaHawaiana();
+	constructorHawaiana->addIngrediente(INGREDIENTES::ACEITUNAS);
+	constructorHawaiana->addIngrediente(INGREDIENTES::QUESO);
+	constructorHawaiana->addIngrediente(INGREDIENTES::QUESO);
+	constructorHawaiana->addIngrediente(INGREDIENTES::QUESO);
+	constructorHawaiana->buildIngredientes();
+
+	Pizza* pizzaHawaiana = constructorHawaiana->getPizza();
+	pizzaHawaiana->show();
+
+	delete constructorHawaiana;
+	delete pizzaHawaiana;
 	return 0;
 }
