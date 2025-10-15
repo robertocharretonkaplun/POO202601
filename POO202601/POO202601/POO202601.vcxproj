@@ -38,8 +38,10 @@
     <ClInclude Include="include\ProgrammingPattterns\Builder\Director.h" />
     <ClInclude Include="include\ProgrammingPattterns\Builder\Pizza.h" />
     <ClInclude Include="include\ProgrammingPattterns\Builder\Producto.h" />
+    <ClInclude Include="include\ProgrammingPattterns\Builder\Prototype.h" />
     <ClInclude Include="include\ProgrammingPattterns\FactoryMethod.h" />
     <ClInclude Include="include\ProgrammingPattterns\MiSingleton.h" />
+    <ClInclude Include="include\ProgrammingPattterns\Prototype\PrototypeConcreto.h" />
     <ClInclude Include="include\Rectangulo.h" />
     <ClInclude Include="include\UsarioBancario.h" />
   </ItemGroup>

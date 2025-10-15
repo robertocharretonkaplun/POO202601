@@ -31,6 +31,9 @@
     <Filter Include="Source Files\ProgrammingPatterns\Builder">
       <UniqueIdentifier>{7d5c796e-8cf5-44c6-960c-a1e83e64c68f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\Prototype">
+      <UniqueIdentifier>{046a439e-b23d-4f4e-8617-f7a7bf287d75}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Item.h">
@@ -101,6 +104,12 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPattterns\Builder\BuilderPizzaHawaiana.h">
       <Filter>Header Files\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\Builder\Prototype.h">
+      <Filter>Header Files\ProgrammingPatterns\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\Prototype\PrototypeConcreto.h">
+      <Filter>Header Files\ProgrammingPatterns\Prototype</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

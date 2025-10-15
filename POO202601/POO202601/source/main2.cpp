@@ -1,21 +1,19 @@
 #include "Prerequisites.h"
-#include "ProgrammingPattterns\Builder\ConstructorPizza.h"
-#include "ProgrammingPattterns\Builder\BuilderPizzaHawaiana.h"
-#include "ProgrammingPattterns\Builder\Pizza.h"
-
+#include "ProgrammingPattterns\Builder\Prototype.h"
+#include "ProgrammingPattterns\Prototype\PrototypeConcreto.h"
 
 int main() {
-	ConstructorPizza* constructorHawaiana = new BuilderPizzaHawaiana();
-	constructorHawaiana->addIngrediente(INGREDIENTES::ACEITUNAS);
-	constructorHawaiana->addIngrediente(INGREDIENTES::QUESO);
-	constructorHawaiana->addIngrediente(INGREDIENTES::QUESO);
-	constructorHawaiana->addIngrediente(INGREDIENTES::QUESO);
-	constructorHawaiana->buildIngredientes();
+	Prototype* original = new PrototypeConcreto();
+	original->config("Original");
 
-	Pizza* pizzaHawaiana = constructorHawaiana->getPizza();
-	pizzaHawaiana->show();
+	// Clonar el prototipo
+	Prototype* clone = original->clone();
+	clone->config("Clone");
+	// Mostrar información
+	original->info();
+	clone->info();
 
-	delete constructorHawaiana;
-	delete pizzaHawaiana;
+	delete original;
+	delete clone;
 	return 0;
 }
