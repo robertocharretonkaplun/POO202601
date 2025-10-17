@@ -31,6 +31,9 @@
     <ClInclude Include="include\ProgrammingPattterns\AbstractFactory\ProductoA1.h" />
     <ClInclude Include="include\ProgrammingPattterns\AbstractFactory\ProductoB.h" />
     <ClInclude Include="include\ProgrammingPattterns\AbstractFactory\ProductoB1.h" />
+    <ClInclude Include="include\ProgrammingPattterns\Adapter\Adaptador.h" />
+    <ClInclude Include="include\ProgrammingPattterns\Adapter\InterfazNueva.h" />
+    <ClInclude Include="include\ProgrammingPattterns\Adapter\InterfazVieja.h" />
     <ClInclude Include="include\ProgrammingPattterns\Builder\Builder.h" />
     <ClInclude Include="include\ProgrammingPattterns\Builder\BuilderConcreto.h" />
     <ClInclude Include="include\ProgrammingPattterns\Builder\BuilderPizzaHawaiana.h" />

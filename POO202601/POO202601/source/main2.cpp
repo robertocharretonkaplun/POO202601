@@ -1,19 +1,19 @@
 #include "Prerequisites.h"
-#include "ProgrammingPattterns\Builder\Prototype.h"
-#include "ProgrammingPattterns\Prototype\PrototypeConcreto.h"
+#include "ProgrammingPattterns\Adapter\InterfazNueva.h"
+#include "ProgrammingPattterns\Adapter\InterfazVieja.h"
+#include "ProgrammingPattterns\Adapter\Adaptador.h"
 
 int main() {
-	Prototype* original = new PrototypeConcreto();
-	original->config("Original");
+	// Crear una instancia de la interfaz vieja
+	InterfazVieja* objetoViejo = new InterfazVieja();
+	InterfazNueva* objetoNuevo = new Adaptador(objetoViejo);
 
-	// Clonar el prototipo
-	Prototype* clone = original->clone();
-	clone->config("Clone");
-	// Mostrar información
-	original->info();
-	clone->info();
+	// Usar el objeto nuevo que adapta el objeto viejo
+	objetoNuevo->metodoNuevo();
 
-	delete original;
-	delete clone;
+	// Liberar memoria
+	delete objetoViejo;
+	delete objetoNuevo;
+
 	return 0;
 }
