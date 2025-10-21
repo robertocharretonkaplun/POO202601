@@ -1,19 +1,19 @@
 #include "Prerequisites.h"
-#include "ProgrammingPattterns\Adapter\InterfazNueva.h"
-#include "ProgrammingPattterns\Adapter\InterfazVieja.h"
-#include "ProgrammingPattterns\Adapter\Adaptador.h"
+#include "ProgrammingPattterns\Decorator\ComponenteConcreto.h"
+#include "ProgrammingPattterns\Decorator\DecoratorConcretoA.h"
+#include "ProgrammingPattterns\Decorator\DecoratorConcretoB.h"
 
 int main() {
-	// Crear una instancia de la interfaz vieja
-	InterfazVieja* objetoViejo = new InterfazVieja();
-	InterfazNueva* objetoNuevo = new Adaptador(objetoViejo);
+	ComponenteConcreto* objeto = new ComponenteConcreto();
+	DecoratorConcretoA* decoradorA = new DecoratorConcretoA(objeto);
+	DecoratorConcretoB* decoradorB = new DecoratorConcretoB(decoradorA);
 
-	// Usar el objeto nuevo que adapta el objeto viejo
-	objetoNuevo->metodoNuevo();
+	objeto->operacion();
+	decoradorA->operacion();
+	decoradorB->operacion();
 
-	// Liberar memoria
-	delete objetoViejo;
-	delete objetoNuevo;
-
+	delete objeto;
+	delete decoradorA;
+	delete decoradorB;
 	return 0;
 }
