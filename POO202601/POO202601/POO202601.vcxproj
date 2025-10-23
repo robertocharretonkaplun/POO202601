@@ -42,6 +42,8 @@
     <ClInclude Include="include\ProgrammingPattterns\Builder\Pizza.h" />
     <ClInclude Include="include\ProgrammingPattterns\Builder\Producto.h" />
     <ClInclude Include="include\ProgrammingPattterns\Builder\Prototype.h" />
+    <ClInclude Include="include\ProgrammingPattterns\Composite\Composite.h" />
+    <ClInclude Include="include\ProgrammingPattterns\Composite\Hoja.h" />
     <ClInclude Include="include\ProgrammingPattterns\Decorator\Componente.h" />
     <ClInclude Include="include\ProgrammingPattterns\Decorator\ComponenteConcreto.h" />
     <ClInclude Include="include\ProgrammingPattterns\Decorator\Decorator.h" />

@@ -1,19 +1,20 @@
 #include "Prerequisites.h"
-#include "ProgrammingPattterns\Decorator\ComponenteConcreto.h"
-#include "ProgrammingPattterns\Decorator\DecoratorConcretoA.h"
-#include "ProgrammingPattterns\Decorator\DecoratorConcretoB.h"
+#include "ProgrammingPattterns/Composite/Composite.h"
+#include "ProgrammingPattterns\Composite\Hoja.h"
 
 int main() {
-	ComponenteConcreto* objeto = new ComponenteConcreto();
-	DecoratorConcretoA* decoradorA = new DecoratorConcretoA(objeto);
-	DecoratorConcretoB* decoradorB = new DecoratorConcretoB(decoradorA);
+	Hoja* hoja1 = new Hoja();
+	Hoja* hoja2 = new Hoja();
+	Composite* composite = new Composite();
 
-	objeto->operacion();
-	decoradorA->operacion();
-	decoradorB->operacion();
+	composite->add(hoja1);
+	composite->add(hoja2);
+	composite->operacion();
 
-	delete objeto;
-	delete decoradorA;
-	delete decoradorB;
+	delete hoja1;
+	delete hoja2;
+	delete composite;
+
+
 	return 0;
 }

@@ -40,6 +40,9 @@
     <Filter Include="Header Files\ProgrammingPatterns\Decorator">
       <UniqueIdentifier>{b4df738b-f86b-42c5-a249-9af79c2d127f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\Composite">
+      <UniqueIdentifier>{c12b694a-0210-4239-aa16-f71ef9e3e72a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Item.h">
@@ -140,6 +143,12 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPattterns\Decorator\DecoratorConcretoB.h">
       <Filter>Header Files\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\Composite\Hoja.h">
+      <Filter>Header Files\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\Composite\Composite.h">
+      <Filter>Header Files\ProgrammingPatterns\Composite</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
