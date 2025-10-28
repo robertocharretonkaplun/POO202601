@@ -43,6 +43,9 @@
     <Filter Include="Header Files\ProgrammingPatterns\Composite">
       <UniqueIdentifier>{c12b694a-0210-4239-aa16-f71ef9e3e72a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\Proxy">
+      <UniqueIdentifier>{f015d656-443b-47f5-9e27-74f4e459ce9b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Item.h">
@@ -149,6 +152,30 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPattterns\Composite\Composite.h">
       <Filter>Header Files\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\Composite\Archivo.h">
+      <Filter>Header Files\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\Composite\Carpeta.h">
+      <Filter>Header Files\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\Composite\Sistema.h">
+      <Filter>Header Files\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\Composite\SistemaArchivo.h">
+      <Filter>Header Files\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\Composite\SistemaCarpeta.h">
+      <Filter>Header Files\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\Proxy\Proxy.h">
+      <Filter>Header Files\ProgrammingPatterns\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\Proxy\Sujeto.h">
+      <Filter>Header Files\ProgrammingPatterns\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\Proxy\SujetoReal.h">
+      <Filter>Header Files\ProgrammingPatterns\Proxy</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
