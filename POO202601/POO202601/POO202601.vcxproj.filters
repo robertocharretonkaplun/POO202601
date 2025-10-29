@@ -46,6 +46,12 @@
     <Filter Include="Header Files\ProgrammingPatterns\Proxy">
       <UniqueIdentifier>{f015d656-443b-47f5-9e27-74f4e459ce9b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\GameProgrammingPatterns">
+      <UniqueIdentifier>{644a17a0-a6f8-4dc8-9c7e-f7009f86d278}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameProgrammingPatterns\Observer">
+      <UniqueIdentifier>{54ff1d83-322e-4b9e-9548-9b4f6e7e3a98}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Item.h">
@@ -176,6 +182,15 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPattterns\Proxy\SujetoReal.h">
       <Filter>Header Files\ProgrammingPatterns\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\Observer.h">
+      <Filter>Header Files\GameProgrammingPatterns\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\TemperatureSensor.h">
+      <Filter>Header Files\GameProgrammingPatterns\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\DisplayDevice.h">
+      <Filter>Header Files\GameProgrammingPatterns\Observer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
