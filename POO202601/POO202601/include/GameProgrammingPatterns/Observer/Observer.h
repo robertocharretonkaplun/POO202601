@@ -1,5 +1,7 @@
 #pragma once
 
+class Notification;
+
 class 
 Observer {
 public:
@@ -7,4 +9,5 @@ public:
 	~Observer() = default;
 
 	virtual void onNotify(int _value) = 0;
+	virtual void onNotify(Notification _value) = 0;
 };

@@ -23,6 +23,7 @@
     <ClInclude Include="include\CuentaBancaria.h" />
     <ClInclude Include="include\Estudiante.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\DisplayDevice.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\Notification.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\Observer.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\TemperatureSensor.h" />
     <ClInclude Include="include\Inventory.h" />
