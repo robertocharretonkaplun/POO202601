@@ -38,6 +38,9 @@
     <ClInclude Include="include\ProgrammingPattterns\Adapter\Adaptador.h" />
     <ClInclude Include="include\ProgrammingPattterns\Adapter\InterfazNueva.h" />
     <ClInclude Include="include\ProgrammingPattterns\Adapter\InterfazVieja.h" />
+    <ClInclude Include="include\ProgrammingPattterns\Bridge\Implementacion.h" />
+    <ClInclude Include="include\ProgrammingPattterns\Bridge\ImplementacionConcretaA.h" />
+    <ClInclude Include="include\ProgrammingPattterns\Bridge\ImplementacionConcretaB.h" />
     <ClInclude Include="include\ProgrammingPattterns\Builder\Builder.h" />
     <ClInclude Include="include\ProgrammingPattterns\Builder\BuilderConcreto.h" />
     <ClInclude Include="include\ProgrammingPattterns\Builder\BuilderPizzaHawaiana.h" />

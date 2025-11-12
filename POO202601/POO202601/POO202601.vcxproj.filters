@@ -52,6 +52,9 @@
     <Filter Include="Header Files\GameProgrammingPatterns\Observer">
       <UniqueIdentifier>{54ff1d83-322e-4b9e-9548-9b4f6e7e3a98}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\Bridge">
+      <UniqueIdentifier>{badf0522-d593-4add-a1a0-0710c1ef8495}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Item.h">
@@ -194,6 +197,15 @@
     </ClInclude>
     <ClInclude Include="include\GameProgrammingPatterns\Observer\Notification.h">
       <Filter>Header Files\GameProgrammingPatterns\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\Bridge\Implementacion.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\Bridge\ImplementacionConcretaA.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\Bridge\ImplementacionConcretaB.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
