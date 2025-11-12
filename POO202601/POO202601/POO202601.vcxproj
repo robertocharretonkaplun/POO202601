@@ -49,6 +49,10 @@
     <ClInclude Include="include\ProgrammingPattterns\Builder\Pizza.h" />
     <ClInclude Include="include\ProgrammingPattterns\Builder\Producto.h" />
     <ClInclude Include="include\ProgrammingPattterns\Builder\Prototype.h" />
+    <ClInclude Include="include\ProgrammingPattterns\ChainOfResponsability\Manejador.h" />
+    <ClInclude Include="include\ProgrammingPattterns\ChainOfResponsability\ManejadorConcretoA.h" />
+    <ClInclude Include="include\ProgrammingPattterns\ChainOfResponsability\ManejadorConcretoB.h" />
+    <ClInclude Include="include\ProgrammingPattterns\ChainOfResponsability\ManejadorConcretoC.h" />
     <ClInclude Include="include\ProgrammingPattterns\Composite\Archivo.h" />
     <ClInclude Include="include\ProgrammingPattterns\Composite\Carpeta.h" />
     <ClInclude Include="include\ProgrammingPattterns\Composite\Composite.h" />
