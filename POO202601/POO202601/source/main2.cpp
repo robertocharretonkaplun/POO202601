@@ -1,25 +1,39 @@
 #include "Prerequisites.h"
-#include "ProgrammingPattterns\ChainOfResponsability\ManejadorConcretoA.h"
-#include "ProgrammingPattterns\ChainOfResponsability\ManejadorConcretoB.h"
-#include "ProgrammingPattterns\ChainOfResponsability\ManejadorConcretoC.h"
+
+std::mutex mtx;
+int global_counter = 0;
+
+void thread(int id) {
+	for (unsigned int i = 0; i < 5; i++) {
+		mtx.lock();
+		std::cout << "Thread " << id << " is running." << std::endl;
+		mtx.unlock();
+	}
+}
+
+void threadCount(int id) {
+	for (unsigned int i = 0; i < 1000; i++) {
+		mtx.lock();
+		global_counter++;
+		mtx.unlock();
+	}
+}
+
+void threadName(int id, std::string name) {
+	for (unsigned int i = 0; i < 5; i++) {
+		mtx.lock();
+		std::cout << "Thread " << name << " is running." << std::endl;
+		mtx.unlock();
+	}
+}
 
 int main() {
-	ManejadorConcretoC manejadorC(nullptr, "None");
-	ManejadorConcretoB manejadorB(&manejadorC, "Manejador C");
-	ManejadorConcretoA manejadorA(&manejadorB, "Manejador B");
-
-	int peticiones[] = { 5, 9, 15, 25, 35 };
-	for (int peticion : peticiones) {
-		manejadorA.manejarPeticion(peticion);
-	}
-
-	//manejadorA.manejarPeticion(7);
-	//manejadorA.manejarPeticion(5);
-	//manejadorA.manejarPeticion(15);
-
-	
+	std::thread t1(thread, 1);
+	std::thread t2(threadName, 2, "Jose");
+	std::thread t3(threadCount, 3);
 
 
 
+	std::cout << "Global counter: " << global_counter << std::endl;
 	return 0;
 }
