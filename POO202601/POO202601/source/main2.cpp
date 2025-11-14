@@ -1,39 +1,36 @@
 #include "Prerequisites.h"
+#include "ProgrammingPattterns/SingletonMultiThread/SingletonMultiThread.h"
 
-std::mutex mtx;
-int global_counter = 0;
+SingletonMultiThread* SingletonMultiThread::instance = nullptr;
+std::mutex SingletonMultiThread::mutex_;
 
-void thread(int id) {
-	for (unsigned int i = 0; i < 5; i++) {
-		mtx.lock();
-		std::cout << "Thread " << id << " is running." << std::endl;
-		mtx.unlock();
-	}
-}
-
-void threadCount(int id) {
-	for (unsigned int i = 0; i < 1000; i++) {
-		mtx.lock();
-		global_counter++;
-		mtx.unlock();
-	}
-}
-
-void threadName(int id, std::string name) {
-	for (unsigned int i = 0; i < 5; i++) {
-		mtx.lock();
-		std::cout << "Thread " << name << " is running." << std::endl;
-		mtx.unlock();
-	}
+void 
+useSingletonMultiThread(int id) {
+	SingletonMultiThread& singleton = SingletonMultiThread::getInstance();
+	// Usar la instancia del singleton
+	std::cout << "Thread " << id << 
+		" using SingletonMultiThread instance at address: " << 
+		&singleton << std::endl;
+	std::cout << std::endl;
 }
 
 int main() {
-	std::thread t1(thread, 1);
-	std::thread t2(threadName, 2, "Jose");
-	std::thread t3(threadCount, 3);
+	//const int numThreads = 5;
+	//std::vector<std::thread> threads;
+	//for (int i = 0; i < numThreads; ++i) {
+	//	threads.emplace_back(useSingletonMultiThread, i);
+	//}
+	//for (auto& th : threads) {
+	//	th.join();
+	//}
+
+	std::thread t1(useSingletonMultiThread, 1);
+	std::thread t2(useSingletonMultiThread, 2);
+
+	t1.join();
+	t2.join();
 
 
 
-	std::cout << "Global counter: " << global_counter << std::endl;
 	return 0;
 }

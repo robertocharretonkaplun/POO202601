@@ -71,6 +71,7 @@
     <ClInclude Include="include\ProgrammingPattterns\Proxy\Proxy.h" />
     <ClInclude Include="include\ProgrammingPattterns\Proxy\Sujeto.h" />
     <ClInclude Include="include\ProgrammingPattterns\Proxy\SujetoReal.h" />
+    <ClInclude Include="include\ProgrammingPattterns\SingletonMultiThread\SingletonMultiThread.h" />
     <ClInclude Include="include\Rectangulo.h" />
     <ClInclude Include="include\UsarioBancario.h" />
   </ItemGroup>

@@ -58,6 +58,9 @@
     <Filter Include="Header Files\ProgrammingPatterns\ChainOfResponsability">
       <UniqueIdentifier>{f4e59aaf-aa80-4a09-9e15-b2b15c4de954}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\SingletonMultiThread">
+      <UniqueIdentifier>{6d0303a6-8781-4783-819d-5bd5aacfc59d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Item.h">
@@ -221,6 +224,9 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPattterns\ChainOfResponsability\ManejadorConcretoC.h">
       <Filter>Header Files\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPattterns\SingletonMultiThread\SingletonMultiThread.h">
+      <Filter>Header Files\ProgrammingPatterns\SingletonMultiThread</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
