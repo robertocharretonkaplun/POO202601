@@ -61,6 +61,21 @@
     <Filter Include="Header Files\ProgrammingPatterns\SingletonMultiThread">
       <UniqueIdentifier>{6d0303a6-8781-4783-819d-5bd5aacfc59d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\GameProgrammingPatterns\Command">
+      <UniqueIdentifier>{075e72c3-52df-492c-97fa-33290908fd50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameProgrammingPatterns\Command\ConcreteCommands">
+      <UniqueIdentifier>{58b2da59-0836-4d59-adc9-4764445c3d6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameProgrammingPatterns\Command\Invoker">
+      <UniqueIdentifier>{d33106ba-b4df-4b2c-ad26-e39359c15591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameProgrammingPatterns\Flyweight">
+      <UniqueIdentifier>{ae8bdcbe-5791-4109-9f6e-0aa665e05ef5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameProgrammingPatterns\State">
+      <UniqueIdentifier>{de30f3e6-f375-47d9-a7b8-9b89eb7937b3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Item.h">
@@ -227,6 +242,45 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPattterns\SingletonMultiThread\SingletonMultiThread.h">
       <Filter>Header Files\ProgrammingPatterns\SingletonMultiThread</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Comando.h">
+      <Filter>Header Files\GameProgrammingPatterns\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Luz.h">
+      <Filter>Header Files\GameProgrammingPatterns\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Command\ComandoEncender.h">
+      <Filter>Header Files\GameProgrammingPatterns\Command\ConcreteCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Command\ComandoApagar.h">
+      <Filter>Header Files\GameProgrammingPatterns\Command\ConcreteCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Command\ControlRemoto.h">
+      <Filter>Header Files\GameProgrammingPatterns\Command\Invoker</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Flyweight\Flyweight.h">
+      <Filter>Header Files\GameProgrammingPatterns\Flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Flyweight\ConcreteFlyweight.h">
+      <Filter>Header Files\GameProgrammingPatterns\Flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Flyweight\FlyweightFactory.h">
+      <Filter>Header Files\GameProgrammingPatterns\Flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\PlayerState.h">
+      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\NormalState.h">
+      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\HurtState.h">
+      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\RageState.h">
+      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\Player.h">
+      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

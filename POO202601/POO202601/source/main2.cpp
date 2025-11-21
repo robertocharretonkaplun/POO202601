@@ -1,34 +1,26 @@
 #include "Prerequisites.h"
-#include "ProgrammingPattterns/SingletonMultiThread/SingletonMultiThread.h"
-
-SingletonMultiThread* SingletonMultiThread::instance = nullptr;
-std::mutex SingletonMultiThread::mutex_;
-
-void 
-useSingletonMultiThread(int id) {
-	SingletonMultiThread& singleton = SingletonMultiThread::getInstance();
-	// Usar la instancia del singleton
-	std::cout << "Thread " << id << 
-		" using SingletonMultiThread instance at address: " << 
-		&singleton << std::endl;
-	std::cout << std::endl;
-}
+#include "GameProgrammingPatterns/Flyweight/FlyweightFactory.h"
 
 int main() {
-	//const int numThreads = 5;
-	//std::vector<std::thread> threads;
-	//for (int i = 0; i < numThreads; ++i) {
-	//	threads.emplace_back(useSingletonMultiThread, i);
-	//}
-	//for (auto& th : threads) {
-	//	th.join();
-	//}
+	FlyweightFactory factory;
+	Flyweight* flyweightA = factory.getFlyweight('A');
+	Flyweight* flyweightB = factory.getFlyweight('B');
+	Flyweight* flyweightC = factory.getFlyweight('C');
+	Flyweight* flyweightD = factory.getFlyweight('D');
+	Flyweight* flyweightA2 = factory.getFlyweight('A');
 
-	std::thread t1(useSingletonMultiThread, 1);
-	std::thread t2(useSingletonMultiThread, 2);
+	flyweightA->draw(10, 20);
+	flyweightB->draw(30, 40);
+	flyweightC->draw(50, 60);
+	flyweightD->draw(70, 80);
+	flyweightA2->draw(40, 20);
 
-	t1.join();
-	t2.join();
+	delete flyweightA;
+	delete flyweightB;
+	delete flyweightC;
+	delete flyweightD;
+
+
 
 
 
