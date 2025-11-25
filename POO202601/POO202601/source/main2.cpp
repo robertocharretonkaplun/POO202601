@@ -1,31 +1,24 @@
 #include "Prerequisites.h"
-#include "GameProgrammingPatterns/State/Player.h"
-#include "GameProgrammingPatterns/State/NormalState.h"
-#include "GameProgrammingPatterns/State/HurtState.h"
-#include "GameProgrammingPatterns/State/RageState.h"
-
+#include "GameProgrammingPatterns\Strategy\Player.h"
+#include "GameProgrammingPatterns\Strategy\MeleeAttackStrategy.h"
+#include "GameProgrammingPatterns\Strategy\RangedAttackStrategy.h"
+#include "GameProgrammingPatterns\Strategy\MagicAttackStrategy.h"
 
 int main() {
-	Player* player = new Player();
-		player->Attack();
-		player->Defend();
-		player->move();
-		std::cout << "Player gets hurt!" << std::endl;
-		player->SetState(new HurtState());
-		player->Attack();
-		player->Defend();
-		player->move();
-		std::cout << "Player enters rage mode!" << std::endl;
-		player->SetState(new RageState());
-		player->Attack();
-		player->Defend();
-		player->move();
-		std::cout << "Player calms down to normal state." << std::endl;
-		player->SetState(new NormalState());
-		player->Attack();
-		player->Defend();
-		player->move();
-		delete player;
+	Player player;
+	// Usar estrategia de ataque cuerpo a cuerpo
+	player.SetStrategy(std::make_unique<MeleeAttackStrategy>());
+	int meleeDamage = player.Attack(50);
+	std::cout << "Melee Attack Damage: " << meleeDamage << std::endl;
+	// Usar estrategia de ataque a distancia
+	player.SetStrategy(std::make_unique<RangedAttackStrategy>());
+	int rangedDamage = player.Attack(50);
+	std::cout << "Ranged Attack Damage: " << rangedDamage << std::endl;
+	// Usar estrategia de ataque mágico
+	player.SetStrategy(std::make_unique<MagicAttackStrategy>());
+	int magicDamage = player.Attack(50);
+	std::cout << "Magic Attack Damage: " << magicDamage << std::endl;
+
 
 	return 0;
 }
