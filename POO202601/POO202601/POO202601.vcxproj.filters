@@ -79,6 +79,9 @@
     <Filter Include="Header Files\GameProgrammingPatterns\Strategy">
       <UniqueIdentifier>{b6ecb60e-4ec5-4ce2-9c84-d3787563e4d9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\GameProgrammingPatterns\Facade">
+      <UniqueIdentifier>{ebc9ad9f-da3b-4c26-9e0c-8c3d04d7318c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Item.h">
@@ -299,6 +302,18 @@
     </ClInclude>
     <ClInclude Include="include\GameProgrammingPatterns\Strategy\Player.h">
       <Filter>Header Files\GameProgrammingPatterns\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Facade\AudioLoader.h">
+      <Filter>Header Files\GameProgrammingPatterns\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Facade\AudioMixer.h">
+      <Filter>Header Files\GameProgrammingPatterns\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Facade\AudioEffectsProcessor.h">
+      <Filter>Header Files\GameProgrammingPatterns\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Facade\AudioFacade.h">
+      <Filter>Header Files\GameProgrammingPatterns\Facade</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
